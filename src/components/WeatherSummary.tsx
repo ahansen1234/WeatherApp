@@ -31,8 +31,10 @@ export const WeatherSummary: FC<WeatherSummaryProps> = ({ location }) => {
     <div>
       <hr />
       <h2>{location.name}</h2>
+      <h5>Current Weather</h5>
+
       <WeatherEntry weather={weather} />
-          <h2>Forecast for {location.name}</h2>
+      <h2>Forecast for {location.name}</h2>
       <div>
         <ol className="outerList">
           {forecast.map((timePoint) => (

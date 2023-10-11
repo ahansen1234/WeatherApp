@@ -1,13 +1,21 @@
 .outerList {
     overflow: auto;
-
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    grid-template-rows: 1fr;
+    margin: 10px;
+    justify-items: center;
 }
 
 .lineItem {
-    border-right: 1px solid black;
+    border: 1px solid black;
     padding: 10px;
     list-style-type: none;
     display: inline-block;
+    width: fill;
+    height: fill;
+    border-radius: 5%;
+    justify-items: center;
 }
 
     .lineItem:hover {
